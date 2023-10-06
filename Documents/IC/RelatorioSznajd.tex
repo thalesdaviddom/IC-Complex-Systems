@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\begin{center}
+\textbf{RELATÓRIO SZNAJD MODEL} 
+\end{center}
+
+\section*{O Modelo}
+O modelo, assim como o modelo de Ising, é baseado na noção de spin (uma variável binária "up", "down") que representa um indivíduo com uma opinião, as regras para dinâmica do sistema são as seguintes:
+\begin{itemize}
+\item Seja $S_i=\{ 1, -1\}$ a opinião da i-ésima pessoa, se $S_i S_{i+1} = 1$, então atualizamos de forma que $S_{i-1} = S_{i+2}= S_i$
+
+\item Caso $S_i S_{i+1} = -1$, então $S_{i-1}=S_{i+1}$ e $S_{i}=S_{i+2}$
+  
+\end{itemize}
+
+
+
+
+\end{document}
